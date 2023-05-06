@@ -1,3 +1,13 @@
 main > div{
     height: calc(100vh - 72px - 50px - 48px);
 }
+
+@media (max-width:404px) {
+    button[value='binario'] {
+        margin-top: 10px;
+    }
+    
+    button{
+        width: 200px;
+    }
+}

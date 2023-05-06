@@ -17,7 +17,7 @@ use Logic\ConversorBinarioDecimal;
         <nav class="navbar bg-black">
             <div class="container-fluid">
                 <div class="col">
-                    <h1 class="navbar-brand mb-0 h1 text-white">Navbar</h1>
+                    <h1 class="navbar-brand mb-0 h1 text-white">Converter</h1>
                 </div>
             </div>
         </nav>
@@ -39,9 +39,8 @@ use Logic\ConversorBinarioDecimal;
         </div>
     </main>
     <footer class="container-fluid bg-black pt-4 pb-4 ">
-        <p class="text-center text-white mb-0">Navbar</p>
+        <p class="text-center text-white mb-0"><a href="https://github.com/Maykon-JDS?tab=repositories" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">GitHub - MaykonJDS</a></p>
     </footer>
-    <script src="/javascript/input-binario.js"></script>
 </body>
 
 </html>
