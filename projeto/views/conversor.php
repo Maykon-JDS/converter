@@ -1,6 +1,7 @@
 <?php
 
-use Logic\ConversorBinarioDecimal;
+    use Logic\ConversorBinarioDecimal;
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -39,7 +40,7 @@ use Logic\ConversorBinarioDecimal;
         </div>
     </main>
     <footer class="container-fluid bg-black pt-4 pb-4 ">
-        <p class="text-center text-white mb-0"><a href="https://github.com/Maykon-JDS?tab=repositories" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">GitHub - MaykonJDS</a></p>
+        <p class="text-center text-white mb-0"><a href="https://github.com/Maykon-JDS" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" target="_blank">GitHub - MaykonJDS</a></p>
     </footer>
 </body>
 
