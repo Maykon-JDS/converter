@@ -1,10 +1,8 @@
 <?php
 
-use Logic\ConversorBinarioDecimal;
+session_start();
 
-require_once "./logic/logica.php";
-ConversorBinarioDecimal::converterParaBinario();
-ConversorBinarioDecimal::converterParaDecimal();
-require_once "./views/conversor.php";
+require_once "./logic/logic.php";
+require_once "./views/converter.php";
 
 ?>

@@ -1,6 +1,6 @@
 <?php
 
-    use Logic\ConversorBinarioDecimal;
+    use Logic\Converter;
 
 ?>
 <!DOCTYPE html>
@@ -18,24 +18,26 @@
         <nav class="navbar bg-black">
             <div class="container-fluid">
                 <div class="col">
-                    <h1 class="navbar-brand mb-0 h1 text-white">Converter</h1>
+                    <a href="/" style="text-decoration: none">
+                        <h1 class="navbar-brand mb-0 h1 text-white">Converter</h1>
+                    </a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <div class="mt-4 mb-4">
-            <form action="/" method="get" class="container">
+            <form action="/controllers/converterController.php" method="get" class="container">
                 <div class="mb-3">
                     <label for="decimal" class="form-label">Número em Decimal</label>
-                    <input type="number" class="form-control" name="decimal" id="decimal" value="<?= ConversorBinarioDecimal::getDecimal() ?>">
+                    <input type="number" class="form-control" name="decimal" id="decimal" value="<?= $_SESSION["decimal"] ?? 0 ?>">
                 </div>
                 <div class="mb-3">
-                    <label for="binario" class="form-label">Número em Binário</label>
-                    <input type="number" class="form-control" name="binario" id="binario" value="<?= ConversorBinarioDecimal::getBinario() ?>">
+                    <label for="binary" class="form-label">Número em Binário</label>
+                    <input type="number" class="form-control" name="binary" id="binary" value="<?= $_SESSION["binary"] ?? 0 ?>">
                 </div>
                 <button type="submit" name="converter" value="decimal" class="btn btn-primary">Converter para Binário</button>
-                <button type="submit" name="converter" value="binario" class="btn btn-primary">Converter para Decimal</button>
+                <button type="submit" name="converter" value="binary" class="btn btn-primary">Converter para Decimal</button>
             </form>
         </div>
     </main>

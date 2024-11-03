@@ -3,10 +3,10 @@ main > div{
 }
 
 @media (max-width:404px) {
-    button[value='binario'] {
+    button[value='binary'] {
         margin-top: 10px;
     }
-    
+
     button{
         width: 200px;
     }
