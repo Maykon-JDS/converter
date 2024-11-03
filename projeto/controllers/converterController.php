@@ -10,8 +10,6 @@ class converterController {
 
     function convert(): void {
 
-        session_start();
-
         Converter::converterToBinary();
         Converter::converterToDecimal();
 
