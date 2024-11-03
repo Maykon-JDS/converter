@@ -2,9 +2,9 @@
 
 namespace Controllers;
 
-require_once "../logic/logic.php";
+require_once "../Classes/Converter.php";
 
-use Logic\Converter;
+use Classes\Converter;
 
 class converterController {
 

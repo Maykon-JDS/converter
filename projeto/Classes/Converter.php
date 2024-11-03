@@ -1,6 +1,6 @@
 <?php
 
-namespace Logic;
+namespace Classes;
 
 class Converter{
 
