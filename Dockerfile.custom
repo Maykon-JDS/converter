@@ -1,0 +1,56 @@
+################################### COMMANDS ###################################
+
+# Create and run a new container from an image
+# docker run -it --name converter -p 8001:80  converter:1.0
+
+# Start a build
+# docker build -t converter:1.0 .
+
+# Return low-level information on Docker objects
+# docker inspect converter
+
+# stress-ng --cpu 1 --vm-bytes 50m --vm 1 --vm-bytes 50m
+
+# docker info
+
+# docker container top
+
+# docker networks -ls
+
+################################################################################
+
+# Base image
+FROM php:8.2-apache
+
+# Execute commands during the build process of a Docker image.
+RUN rm -R /etc/apache2/sites-available/*.conf
+
+RUN rm -R /etc/apache2/sites-enabled/*.conf
+
+RUN mkdir -p /var/lib/converter
+
+RUN mkdir -p /var/lib/converter/session
+
+RUN mkdir -p /var/lib/converter/logs
+
+RUN mkdir -p /var/www/converter/cgi-bin/
+
+RUN chmod -R 777 /var/lib/
+
+RUN chmod -R 755 /var/www/
+
+COPY  ["/projeto/","/var/www/converter/"]
+
+COPY  ["/server/cgi-bin","/var/www/converter/cgi-bin/"]
+
+COPY  ["/server/ports.conf","/etc/apache2/ports.conf"]
+
+COPY  ["/server/vh-converter.conf","/etc/apache2/sites-available/vh-converter.conf"]
+
+RUN ln -s /etc/apache2/sites-available/vh-converter.conf /etc/apache2/sites-enabled/vh-converter.conf
+
+LABEL description = "Apache 2.4"
+
+EXPOSE 8001
+
+ENTRYPOINT apachectl start && tail -f /dev/null

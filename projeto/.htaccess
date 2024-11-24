@@ -1,2 +1,45 @@
+# php_value session.save_path "D:/Meus Projetos/conversor-para-binario/server/sessions"
+php_value session.save_path "/var/lib/converter/session"
+php_value session.name "SESSID"
 php_value session.auto_start 1
-php_value session.save_path "D:/Meus Projetos/conversor-para-binario/server/sessions"
+php_value session.use_trans_sid 1
+
+# php_value session.use_cookies 0
+# php_value session.use_only_cookies 0
+
+# php_value session.save_handler
+# php_value session.serialize_handler
+# php_value session.gc_probability
+# php_value session.gc_divisor
+# php_value session.gc_maxlifetime
+# php_value session.use_strict_mode
+# php_value session.referer_check
+# php_value session.use_strict_mode
+# php_value session.use_cookies
+
+# php_value session.use_only_cookies
+# php_value session.cookie_lifetime
+# php_value session.cookie_path
+
+# php_value session.cookie_domain
+# php_value session.cookie_secure
+# php_value session.cookie_httponly
+
+
+# php_value session.cookie_samesite
+# php_value session.cache_limiter
+# php_value session.cache_expire
+# php_value session.trans_sid_tags
+
+# php_value session.trans_sid_hosts
+# php_value session.sid_length
+# php_value session.sid_bits_per_character
+# php_value session.hash_function
+# php_value session.hash_bits_per_character
+# php_value session.upload_progress.enabled
+# php_value session.upload_progress.cleanup
+# php_value session.upload_progress.prefix
+# php_value session.upload_progress.name
+# php_value session.upload_progress.freq
+# php_value session.upload_progress.min_freq
+# php_value session.lazy_write
