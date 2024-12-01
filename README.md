@@ -15,6 +15,9 @@
   - [How to Run the Project](#how-to-run-the-project)
     - [Requirements to Run the Project](#requirements-to-run-the-project)
     - [Running the Project](#running-the-project)
+  - [How to Contribute](#how-to-contribute)
+    - [Requirements to Configure the Development Environment](#requirements-to-configure-the-development-environment)
+    - [How to Use the Dev Container of the Project](#how-to-use-the-dev-container-of-the-project)
   - [License](#license)
 
 
@@ -160,11 +163,44 @@ Para entender a estrutura do projeto, consulte [Estrutura do Projeto](link_para_
 6. Open your browser and navigate to the project URL
    - Access the project in your browser: `127.0.0.1:8001`
 
+## How to Contribute
 
-<!-- Para obter instruções sobre como executar o projeto, consulte [Como Executar o Projeto](link_para_o_documentacao_execucao.md). -->
+### Requirements to Configure the Development Environment
 
-<!-- ## Como Contribuir
-Se você quiser contribuir para o projeto, por favor, siga as orientações em [Como Contribuir](link_para_o_documentacao_contribuicao.md). -->
+Before contributing to this project, ensure the following tools are installed on your system:
+
+- Git: [Link to Download](https://git-scm.com/)
+- Docker: [Link to Download](https://docs.docker.com/get-docker/)
+- Visual Studio Code: [Link to Download](https://code.visualstudio.com/download)
+  - Required Extension:
+    - Dev Containers: [Link to Download](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+### How to Use the Dev Container of the Project
+
+1. Choose a directory to clone the project's repository
+    - Select a directory on your system where you want to download the project files (e.g., `~/projects`).
+
+2. Clone the project repository:
+    - Run the following command in your terminal:
+
+      ```bash
+      git clone https://github.com/Maykon-JDS/converter.git
+      ```
+3. Open the project root directory
+    - Open the project root directory in Visual Studio Code
+
+4. Open the Command Palette:
+   - Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS) to open the Command Palette in Visual Studio Code.
+
+5. Build the Docker containers
+   - Choose `Dev Containers: Open Folder in Container` from the Command Palette.
+
+6. Wait for the container to be built
+   - The development container will be built and started automatically.
+
+7. Start contributing to the project! 😁
+
+<!-- TODO: Create a section to describe how to contribute to the project -->
 
 ## License
 This project is under the [MIT License](./LICENSE). Please see the [LICENSE](./LICENSE) file for more details.
