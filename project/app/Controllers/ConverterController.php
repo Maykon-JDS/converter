@@ -6,7 +6,7 @@ require_once "../Classes/Converter.php";
 
 use Classes\Converter;
 
-class converterController {
+class ConverterController {
 
     function convert(): void {
 
@@ -22,5 +22,5 @@ class converterController {
 
 }
 
-$converterController = new converterController();
-$converterController->convert();
+$ConverterController = new ConverterController();
+$ConverterController->convert();

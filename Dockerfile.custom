@@ -39,7 +39,7 @@ RUN chmod -R 777 /var/lib/
 
 RUN chmod -R 755 /var/www/
 
-COPY  ["/projeto/","/var/www/converter/"]
+COPY  ["/project/","/var/www/converter/"]
 
 COPY  ["/server/cgi-bin","/var/www/converter/cgi-bin/"]
 
