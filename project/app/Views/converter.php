@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../../resources/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Document</title>
 </head>
@@ -27,7 +27,7 @@
     </header>
     <main>
         <div class="mt-4 mb-4">
-            <form action="/controllers/converterController.php" method="get" class="container">
+            <form action="../app/Controllers/ConverterController.php" method="get" class="container">
                 <div class="mb-3">
                     <label for="decimal" class="form-label">Número em Decimal</label>
                     <input type="number" class="form-control" name="decimal" id="decimal" value="<?= $_SESSION["decimal"] ?? 0 ?>">
