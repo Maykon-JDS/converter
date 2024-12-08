@@ -1,8 +1,3 @@
-<?php
-
-    use Models\ConverterModel;
-
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

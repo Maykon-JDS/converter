@@ -2,12 +2,12 @@
 
 namespace Controllers;
 
-require_once "./app/Models/ConverterModel.php";
-require_once "./app/Models/ModelAbstract.php";
-require_once "./app/Controllers/ControllerAbstract.php";
+require_once "./app/Config/config.php";
+
+require_once MODELS_PATH . "/ModelAbstract.php";
+require_once CONTROLLERS_PATH . "/ControllerAbstract.php";
 
 use Models\ConverterModelAbstract;
-use Models\ConverterModel;
 use Controllers\ControllerAbstract;
 
 class HomeController extends ControllerAbstract
@@ -15,18 +15,16 @@ class HomeController extends ControllerAbstract
 
     private ConverterModelAbstract $ConverterModel;
 
-    public function __construct()
+    public function __construct(ConverterModelAbstract $ConverterModel)
     {
 
-        // TODO: Acoplamento muito forte pois a classe ConverterModel esta sendo instanciada dentro da classe HomeController
-        // Quebra o principio de
-        $this->ConverterModel = new ConverterModel();
+        $this->ConverterModel = $ConverterModel;
 
     }
 
     public function index(): void
     {
-        require_once "./app/Views/Home.php";
+        require_once VIEWS_PATH . "/Home.php";
     }
 
     public function convert(): void

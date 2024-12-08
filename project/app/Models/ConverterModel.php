@@ -2,7 +2,9 @@
 
 namespace Models;
 
-require_once "./app/Models/ConverterModelAbstract.php";
+require_once "./app/Config/config.php";
+
+require_once MODELS_PATH . "/ConverterModelAbstract.php";
 
 class ConverterModel extends ConverterModelAbstract {
 
