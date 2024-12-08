@@ -50,7 +50,7 @@ services:
     #   creates a bind mount, meaning that changes made to the ./project
     #   directory on the host will be reflected inside the container at
     #   /var/www/localhost/htdocs/, and vice versa.
-    # - ../projeto:/var/www/html
+      - ../project:/var/www/converter
     # creates a volume
       - ../server/httpd.conf:/etc/apache2/apache2.conf
       # - httpd-conf:/etc/apache2/

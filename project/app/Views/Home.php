@@ -1,8 +1,3 @@
-<?php
-
-    use Classes\Converter;
-
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -27,7 +22,7 @@
     </header>
     <main>
         <div class="mt-4 mb-4">
-            <form action="../app/Controllers/ConverterController.php" method="get" class="container">
+            <form action="/" method="get" class="container">
                 <div class="mb-3">
                     <label for="decimal" class="form-label">Número em Decimal</label>
                     <input type="number" class="form-control" name="decimal" id="decimal" value="<?= $_SESSION["decimal"] ?? 0 ?>">
@@ -36,8 +31,8 @@
                     <label for="binary" class="form-label">Número em Binário</label>
                     <input type="number" class="form-control" name="binary" id="binary" value="<?= $_SESSION["binary"] ?? 0 ?>">
                 </div>
-                <button type="submit" name="converter" value="decimal" class="btn btn-primary">Converter para Binário</button>
-                <button type="submit" name="converter" value="binary" class="btn btn-primary">Converter para Decimal</button>
+                <button type="submit" name="converter" value="binary" class="btn btn-primary">Converter para Binário</button>
+                <button type="submit" name="converter" value="decimal" class="btn btn-primary">Converter para Decimal</button>
             </form>
         </div>
     </main>
