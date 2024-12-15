@@ -18,6 +18,7 @@
   - [How to Contribute](#how-to-contribute)
     - [Requirements to Configure the Development Environment](#requirements-to-configure-the-development-environment)
     - [How to Use the Dev Container of the Project](#how-to-use-the-dev-container-of-the-project)
+    - [Contributing Guidelines](#contributing-guidelines)
   - [License](#license)
 
 
@@ -201,6 +202,43 @@ Before contributing to this project, ensure the following tools are installed on
 7. Start contributing to the project! 😁
 
 <!-- TODO: Create a section to describe how to contribute to the project -->
+
+## Contributing Guidelines
+
+We welcome contributions! To get started:
+
+**1. Fork the repository:**
+  Click on the "Fork" button at the top-right corner of this repository to create a copy under your GitHub account.
+
+**2. Clone your fork:**
+```git 
+git clone https://github.com/YOUR_USERNAME/converter.git
+```
+
+**3.  Create a new branch:**
+```
+git checkout -b your-feature-branch
+```
+
+**4. Make your changes:**
+- Add new features, fix bugs, or improve documentation.
+
+**5. Commit your changes:**
+    
+    
+      git add .
+      git commit -m "Add [feature/fix]: Brief description of the change"
+    
+**6. Push your branch to your fork:**
+
+```
+git push origin your-feature-branch
+```
+
+**7. Submit a pull request (PR):**
+- Go to the original repository on GitHub.
+- Click "Pull Requests" > "New Pull Request".
+- Select your branch and submit your changes for review.
 
 ## License
 This project is under the [MIT License](./LICENSE). Please see the [LICENSE](./LICENSE) file for more details.
