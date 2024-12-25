@@ -30,13 +30,10 @@ jobs:
         - name: Create Comment With API
           run: |
             gh api -X POST \
-            https://api.github.com/repo/${ORGANIZATION}/${REPOSITORY}/issues/${ISSUE_NUMBER}/comments \
+            ${{ github.event.issue.comments_url }} \
             -f body='
             Comment but from the API call not action
             '
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            ORGANIZATION: ${{ github.event.organization.login }}
-            REPOSITORY: ${{ github.event.repository.name }}
-            ISSUE_NUMBER: ${{ github.event.issue.number }}
+          # env:
+          #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
