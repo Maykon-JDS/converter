@@ -1,8 +1,8 @@
-import { createRoot } from "react-dom/client";
-
 function Header(props) {
 
     const {title} = props;
+
+    setTimeout
 
     return (
         <>
@@ -22,7 +22,3 @@ function Header(props) {
 }
 
 export default Header;
-
-const domNode = document.getElementById("header-react");
-const root = createRoot(domNode);
-root.render(<Header title="Converter"/>);

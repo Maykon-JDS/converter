@@ -21,4 +21,11 @@ switch (@$_GET["converter"]) {
 
 }
 
+// $uri = $_SERVER['REQUEST_URI'];
+
+// preg_match("/^[^?]+/",  $_SERVER['REQUEST_URI'], $uri);
+
+// print_r($uri);
+
+
 ?>

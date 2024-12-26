@@ -7,6 +7,8 @@ function InputWithLabel(props) {
     const { id } = props;
     const { defaultValue } = props;
 
+    console.log(defaultValue)
+
     const { text } = props;
     const { htmlFor = id} = props;
 

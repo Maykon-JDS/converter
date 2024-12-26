@@ -1,26 +1,28 @@
-import { createRoot } from "react-dom/client";
-import Input from "./Input";
-import Label from "./Label";
 import Button from "./Button";
 import InputWithLabel from "./InputWithLabel";
 
 function Main(props) {
+
+    let { decimal = 0 } = props;
+
+    let { binary = 0 } = props;
+
     return (
-        <>
+        <main>
             <div className="mt-4 mb-4">
                 <form action="/" method="get" className="container">
                     <InputWithLabel
                         type="number"
                         name="decimal"
                         id="decimal"
-                        defaultValue="0"
+                        defaultValue={ decimal }
                         text="Número em Decimal"
                     />
                     <InputWithLabel
                         type="number"
                         name="binary"
                         id="binary"
-                        defaultValue="0"
+                        defaultValue={ binary }
                         text="Número em Binário"
                     />
                     <Button
@@ -37,12 +39,8 @@ function Main(props) {
                     />
                 </form>
             </div>
-        </>
+        </main>
     );
 }
 
 export default Main;
-
-const domNode = document.getElementById("main-react");
-const root = createRoot(domNode);
-root.render(<Main />);

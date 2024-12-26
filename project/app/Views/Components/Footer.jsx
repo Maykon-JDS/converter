@@ -4,7 +4,7 @@ function Footer(props) {
     const { title } = props;
 
     return (
-        <>
+        <footer>
             <div className="container-fluid bg-black pt-4 pb-4 ">
                 <p className="text-center text-white mb-0">
                     <a
@@ -16,12 +16,8 @@ function Footer(props) {
                     </a>
                 </p>
             </div>
-        </>
+        </footer>
     );
 }
 
 export default Footer;
-
-const domNode = document.getElementById("footer-react");
-const root = createRoot(domNode);
-root.render(<Footer />);

@@ -14,7 +14,8 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [
 		8080,
-		8001
+		8001,
+		8002
 	],
 	"features": {
 		"ghcr.io/stuartleeks/dev-container-features/shell-history:0": {},
@@ -24,6 +25,9 @@
 	"portsAttributes": {
 		"8001": {
 			"label": "Application Port"
+		},
+		"8002": {
+			"label": "Vite Port"
 		}
 	},
 	"customizations": {

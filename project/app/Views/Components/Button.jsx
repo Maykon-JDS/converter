@@ -10,7 +10,7 @@ function Button(props) {
             type={type}
             name={name}
             value={value}
-            className="btn btn-primary"
+            className="btn btn-primary me-1"
         >
             {text}
         </button>

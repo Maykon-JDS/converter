@@ -17,12 +17,31 @@
 
 # docker networks -ls
 
+# docker exec -it  converter-project-converter-1 bash
+
 ################################################################################
 
 # Base image
 FROM php:8.2-apache
 
 # Execute commands during the build process of a Docker image.
+# RUN
+
+#Using Debian, as root (Node.js 22)
+#Before you begin, ensure that curl is installed on your system. If curl is not installed, you can install it using the following command:
+RUN a2enmod headers
+
+RUN apt-get install -y curl
+
+# Download the setup script:
+RUN curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh
+
+# Run the setup script with sudo:
+RUN bash nodesource_setup.sh
+
+# Install Node.js:
+RUN apt-get install -y nodejs
+
 RUN rm -R /etc/apache2/sites-available/*.conf
 
 RUN rm -R /etc/apache2/sites-enabled/*.conf
@@ -48,6 +67,10 @@ COPY  ["/server/ports.conf","/etc/apache2/ports.conf"]
 COPY  ["/server/vh-converter.conf","/etc/apache2/sites-available/vh-converter.conf"]
 
 RUN ln -s /etc/apache2/sites-available/vh-converter.conf /etc/apache2/sites-enabled/vh-converter.conf
+
+WORKDIR /var/www/converter/
+
+RUN npm install
 
 LABEL description = "Apache 2.4"
 
