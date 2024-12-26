@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.3"
+  },
+  "scripts": {
+    "dev": "vite --debug --config ./resources/lib/react/vite.config.js",
+    "build": "vite build",
+    "serve": "vite preview"
+  }
+}

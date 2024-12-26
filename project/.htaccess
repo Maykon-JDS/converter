@@ -1,4 +1,9 @@
 # php_value session.save_path "D:/Meus Projetos/conversor-para-binario/server/sessions"
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "http://localhost:8002"
+    Header set Access-Control-Allow-Methods "GET,POST,OPTIONS,DELETE,PUT"
+</IfModule>
+
 php_value session.save_path "/var/lib/converter/session"
 php_value session.name "SESSID"
 php_value session.auto_start 1

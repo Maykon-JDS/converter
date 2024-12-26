@@ -18,7 +18,7 @@
   - [How to Contribute](#how-to-contribute)
     - [Requirements to Configure the Development Environment](#requirements-to-configure-the-development-environment)
     - [How to Use the Dev Container of the Project](#how-to-use-the-dev-container-of-the-project)
-    - [Contributing Guidelines](#contributing-guidelines)
+  - [Contributing Guidelines](#contributing-guidelines)
   - [License](#license)
 
 
@@ -29,6 +29,8 @@ Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum non sus
 Vivamus interdum eget nisl ac iaculis. Nullam at pulvinar lectus. Nulla facilisi.
 Vestibulum vitae lectus ligula. Sed dictum erat non ante aliquet, eget consequat purus mattis.] -->
 
+<!-- https://home.aveek.io/GitHub-Profile-Badges/ -->
+
 ## Technologies Used
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)&nbsp;
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)&nbsp;
@@ -36,21 +38,19 @@ Vestibulum vitae lectus ligula. Sed dictum erat non ante aliquet, eget consequat
 ![APACHE](https://img.shields.io/badge/apache-b21f12?style=for-the-badge&logo=apache&logoColor=white)&nbsp;
 ![DOCKER](https://img.shields.io/badge/Docker-0895e7?style=for-the-badge&logo=Docker&logoColor=white)&nbsp;
 ![VScode](https://img.shields.io/badge/vscode-4285F4?style=for-the-badge&logo=VSCode&logoColor=white)&nbsp;
+![React.js](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp;
+![NodeJS](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)&nbsp;
+![Vite](https://img.shields.io/badge/Vite-646CFF.svg?style=for-the-badge&logo=Vite&logoColor=white)&nbsp;
+
+
 
 <!-- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)&nbsp; -->
 <!-- ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)&nbsp; -->
-<!-- ![NodeJS](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)&nbsp; -->
-
 <!-- ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)&nbsp;
-
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)&nbsp;
-
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)&nbsp;
-
 ![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)&nbsp;
-
 ![NodeJS](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)&nbsp;
-
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)&nbsp;
 
 ![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)&nbsp;
@@ -67,7 +67,6 @@ Vestibulum vitae lectus ligula. Sed dictum erat non ante aliquet, eget consequat
 
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)&nbsp;
 
-![React.js](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp;
 
 ![NextJS](https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)&nbsp;
 
@@ -140,27 +139,27 @@ Para entender a estrutura do projeto, consulte [Estrutura do Projeto](link_para_
 2. Clone the project repository:
     - Run the following command in your terminal:
 
-      ```bash
-      git clone https://github.com/Maykon-JDS/converter.git
-      ```
+```bash
+git clone https://github.com/Maykon-JDS/converter.git
+```
 3. Navigate to the project root directory
     - Access the project root directory with the terminal:
 
-      ```bash
-      cd converter
-      ```
+```bash
+cd converter
+```
 4. Build the Docker containers
    - Use Docker Compose to build the project's environment:
 
-      ```bash
-      docker compose -f ./docker/docker-compose.yml build
-      ```
+```bash
+docker compose -f ./docker/docker-compose.yml build
+```
 5. Start the Docker containers
    - Initialize the containers to run the project:
 
-      ```bash
-      docker compose -f ./docker/docker-compose.yml up
-      ```
+```bash
+docker compose -f ./docker/docker-compose.yml up
+```
 6. Open your browser and navigate to the project URL
    - Access the project in your browser: `127.0.0.1:8001`
 
@@ -184,9 +183,9 @@ Before contributing to this project, ensure the following tools are installed on
 2. Clone the project repository:
     - Run the following command in your terminal:
 
-      ```bash
-      git clone https://github.com/Maykon-JDS/converter.git
-      ```
+```bash
+git clone https://github.com/Maykon-JDS/converter.git
+```
 3. Open the project root directory
     - Open the project root directory in Visual Studio Code
 
@@ -211,12 +210,12 @@ We welcome contributions! To get started:
   Click on the "Fork" button at the top-right corner of this repository to create a copy under your GitHub account.
 
 **2. Clone your fork:**
-```git 
+```bash
 git clone https://github.com/YOUR_USERNAME/converter.git
 ```
 
 **3.  Create a new branch:**
-```
+```bash
 git checkout -b your-feature-branch
 ```
 
@@ -224,14 +223,14 @@ git checkout -b your-feature-branch
 - Add new features, fix bugs, or improve documentation.
 
 **5. Commit your changes:**
-    
-    
-      git add .
-      git commit -m "Add [feature/fix]: Brief description of the change"
-    
+
+```bash
+git add .
+git commit -m "Add [feature/fix]: Brief description of the change"
+```
 **6. Push your branch to your fork:**
 
-```
+```bash
 git push origin your-feature-branch
 ```
 

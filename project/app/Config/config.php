@@ -6,3 +6,5 @@ define('APP_PATH', __DIR__ . '/../');
 define('VIEWS_PATH', __DIR__ . '/../Views/');
 define('MODELS_PATH', __DIR__ . '/../Models/');
 define('CONTROLLERS_PATH', __DIR__ . '/../Controllers/');
+
+define('LIB_PATH', __DIR__ . '/../../resources/lib/');
