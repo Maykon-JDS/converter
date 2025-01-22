@@ -1,26 +1,3 @@
-################################### COMMANDS ###################################
-
-# Create and run a new container from an image
-# docker run -it --name converter -p 8001:80  converter:1.0
-
-# Start a build
-# docker build -t converter:1.0 .
-
-# Return low-level information on Docker objects
-# docker inspect converter
-
-# stress-ng --cpu 1 --vm-bytes 50m --vm 1 --vm-bytes 50m
-
-# docker info
-
-# docker container top
-
-# docker networks -ls
-
-# docker exec -it  converter-project-converter-1 bash
-
-################################################################################
-
 # Base image
 FROM php:8.2-apache
 
@@ -73,6 +50,11 @@ WORKDIR /var/www/converter/
 RUN npm install
 
 LABEL description = "Apache 2.4"
+LABEL com.example.version="0.0.1-beta"
+LABEL vendor1="ACME Incorporated"
+LABEL vendor2=ZENITH\ Incorporated
+LABEL com.example.release-date="2015-02-12"
+LABEL com.example.version.is-production=""
 
 EXPOSE 8001
 
